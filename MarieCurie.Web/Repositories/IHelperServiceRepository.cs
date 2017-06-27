@@ -1,4 +1,4 @@
-﻿using MarieCurie.Interview.Assets.Model;
+﻿using MarieCurie.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +9,6 @@ namespace MarieCurie.Web.Repositories
 {
     interface IHelperServiceRepository
     {
-        List<HelperService> getCenters();
+        List<MyHelperService> getCenters();
     }
 }

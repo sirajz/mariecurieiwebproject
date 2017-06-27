@@ -1,4 +1,5 @@
 ﻿using MarieCurie.Interview.Assets.Model;
+using MarieCurie.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ namespace MarieCurie.Web.Repositories
 {
     public class HelperServicesMockRepo1 : IHelperServiceRepository
     {
-        public List<HelperService> getCenters()
+        public List<MyHelperService> getCenters()
         {
             //main services openning hours 
             List<int> Mon = new List<int> { 8, 17 };
@@ -17,6 +18,8 @@ namespace MarieCurie.Web.Repositories
             List<int> Thu = new List<int> { 9, 18 };
             List<int> Fri = new List<int> { 9, 18 };
             List<int> Sat = new List<int> { 9, 18 };
+            List<int> Sun = new List<int> { 9, 18 };
+
 
             //community services openning hours
             List<int> MonType2 = new List<int> { 17, 20 };
@@ -25,11 +28,12 @@ namespace MarieCurie.Web.Repositories
             List<int> ThuType2 = new List<int> { 17, 20 };
             List<int> FriType2 = new List<int> { 17, 20 };
             List<int> SatType2 = new List<int> { 17, 20 };
+            List<int> SunType2 = new List<int> { 17, 20 };
 
 
-            List<HelperService> HlpServices = new List<HelperService>()
+            List<MyHelperService> HlpServices = new List<MyHelperService>()
                 {
-                    new HelperService()
+                    new MyHelperService()
                         {
                             Title = "East London Helper Services",
                             Description = "East Description, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non blandit neque, rutrum dictum nisi. Proin volutpat vulputate posuere.",
@@ -39,11 +43,12 @@ namespace MarieCurie.Web.Repositories
                             WednesdayOpeningHours = Wed,
                             ThursdayOpeningHours = Thu,
                             FridayOpeningHours = Fri,
-                            SaturdayOpeningHours = Sat
+                            SaturdayOpeningHours = Sat,
+                            SundayOpeningHours = Sun
 
                         },
 
-                    new HelperService()
+                    new MyHelperService()
                         {
                             Title = "North London Helper Services",
                             Description = "East Description, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non blandit neque, rutrum dictum nisi. Proin volutpat vulputate posuere.",
@@ -53,11 +58,12 @@ namespace MarieCurie.Web.Repositories
                             WednesdayOpeningHours = WedType2,
                             ThursdayOpeningHours = ThuType2,
                             FridayOpeningHours = FriType2,
-                            SaturdayOpeningHours = SatType2
-
+                            SaturdayOpeningHours = SatType2,
+                            SundayOpeningHours = SunType2
+                            
                         },
 
-                    new HelperService()
+                    new MyHelperService()
                         {
                             Title = "West London Helper Services",
 
@@ -66,10 +72,14 @@ namespace MarieCurie.Web.Repositories
                             MondayOpeningHours = Mon,
                             TuesdayOpeningHours = TueType2,
                             WednesdayOpeningHours = Wed,
-
+                            ThursdayOpeningHours = Thu,
+                            FridayOpeningHours = Fri,
+                            SaturdayOpeningHours = Sat,
+                            SundayOpeningHours = Sun
+                            
                         },
 
-                    new HelperService()
+                    new MyHelperService()
                         {
                             Title = "Essex Helper Services",
                             Description = "West Description, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non blandit neque, rutrum dictum nisi. Proin volutpat vulputate posuere.",
@@ -79,11 +89,12 @@ namespace MarieCurie.Web.Repositories
                             WednesdayOpeningHours = Wed,
                             ThursdayOpeningHours = Thu,
                             FridayOpeningHours = Fri,
-                            SaturdayOpeningHours = Sat
-
+                            SaturdayOpeningHours = Sat,
+                            SundayOpeningHours = Sun
+                            
 
                         },
-            new HelperService()
+            new MyHelperService()
                         {
                             Title = "Surrey Helper Services",
                             Description = "West Description, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non blandit neque, rutrum dictum nisi. Proin volutpat vulputate posuere.",
@@ -93,10 +104,11 @@ namespace MarieCurie.Web.Repositories
                             WednesdayOpeningHours = Wed,
                             ThursdayOpeningHours = Thu,
                             FridayOpeningHours = Fri,
-                            SaturdayOpeningHours = Sat
-
+                            SaturdayOpeningHours = Sat,
+                            SundayOpeningHours = Sun
+                            
                         },
-             new HelperService()
+             new MyHelperService()
                         {
                             Title = "Kent Helper Services",
                             Description = "West Description, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non blandit neque, rutrum dictum nisi. Proin volutpat vulputate posuere.",
@@ -106,7 +118,9 @@ namespace MarieCurie.Web.Repositories
                             WednesdayOpeningHours = WedType2,
                             ThursdayOpeningHours = ThuType2,
                             FridayOpeningHours = FriType2,
-                            SaturdayOpeningHours = SatType2
+                            SaturdayOpeningHours = SatType2,
+                            SundayOpeningHours = SunType2
+
                         }
                 };
 

@@ -445,6 +445,7 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Abstracts\IHelperServiceExtention.cs" />
     <Compile Include="Models\MyHelperService.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -20,7 +20,7 @@ namespace MarieCurie.Web.Tests
         {
             //arrange
             HelperServicesMockRepo1 repo = new HelperServicesMockRepo1();
-            List<HelperService> centers = repo.getCenters();
+            List<MyHelperService> centers = repo.getCenters();
 
                         string DayOfWeek = DateTime.Now.DayOfWeek.ToString();
             int Hour = 10; // DateTime.Now.Hour;
@@ -28,7 +28,7 @@ namespace MarieCurie.Web.Tests
             string result = "";
 
             //act
-            if (HelperServicesUtility.checkOpenningHours(DayOfWeek, Hour, center))
+            if (center.checkOpenningHours(DayOfWeek, Hour))
                 result = $"panel panel-warning col-md-3";
             else
                 result = $"panel panel-default col-md-3";
@@ -46,7 +46,7 @@ namespace MarieCurie.Web.Tests
         {
             //arrange
             HelperServicesMockRepo1 repo = new HelperServicesMockRepo1();
-            List<HelperService> centers = repo.getCenters();
+            List<MyHelperService> centers = repo.getCenters();
 
             string dayOfWeek = DayOfWeek.Monday.ToString();
             int Hour = 17; // DateTime.Now.Hour;
@@ -54,7 +54,7 @@ namespace MarieCurie.Web.Tests
             string result = "";
 
             //act
-            result = HelperServicesUtility.nextOpenningHours(dayOfWeek, Hour, center);
+            result = center.nextOpenningHours(dayOfWeek, Hour);
 
             //assert
             Assert.IsTrue(result == "Open today until 8.00 pm");
@@ -69,7 +69,7 @@ namespace MarieCurie.Web.Tests
         {
             //arrange
             HelperServicesMockRepo1 repo = new HelperServicesMockRepo1();
-            List<HelperService> centers = repo.getCenters();
+            List<MyHelperService> centers = repo.getCenters();
 
             string dayOfWeek = DayOfWeek.Tuesday.ToString();
             int Hour = 21; // DateTime.Now.Hour;
@@ -77,7 +77,7 @@ namespace MarieCurie.Web.Tests
             string result = "";
 
             //act
-            result = HelperServicesUtility.nextOpenningHours(dayOfWeek, Hour, center);
+            result = center.nextOpenningHours(dayOfWeek, Hour);
 
             //assert
             Assert.IsTrue(result == "Reopens tomorrow 5.00 pm");
@@ -87,10 +87,7 @@ namespace MarieCurie.Web.Tests
 
         }
 
-        [TestMethod]
-        public void TestMethod1()
-        {
-        }
+
 
     }
 }

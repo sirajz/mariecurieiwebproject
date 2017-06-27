@@ -18,29 +18,29 @@ namespace MarieCurie.Web
 
         }
 
-        public List<HelperService> getHelperServices()
+        public List<MyHelperService> getHelperServices()
         {
             HelperServicesMockRepo1 repo = new HelperServicesMockRepo1();
             return repo.getCenters();
             
         }
 
-        public string getStyle(HelperService center)
+        public string getStyle(MyHelperService center)
         {
             string DayOfWeek = DateTime.Now.DayOfWeek.ToString();
             int Hour = DateTime.Now.Hour;
 
-            if (HelperServicesUtility.checkOpenningHours(DayOfWeek, Hour, center))
+            if (center.checkOpenningHours(DayOfWeek, Hour))
                 return $"panel panel-warning col-md-3";
             else
                 return $"panel panel-default col-md-3";
         }
-        public string getNextOpenning(HelperService center)
+        public string getNextOpenning(MyHelperService center)
         {
             string DayOfWeek = DateTime.Now.DayOfWeek.ToString();
             int Hour = DateTime.Now.Hour;
 
-            return HelperServicesUtility.nextOpenningHours(DayOfWeek, Hour, center);
+            return center.nextOpenningHours(DayOfWeek, Hour);
 
 
 

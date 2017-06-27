@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarieCurie.Web.Tests", "Mar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarieCurie.HelperServices.Utilities", "MarieCurie.HelperServices.Utilities\MarieCurie.HelperServices.Utilities.csproj", "{74B2159D-4286-4A8E-AFE3-A4687A4EA33E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarieCurie.WebMvc", "MarieCurie.WebMvc\MarieCurie.WebMvc.csproj", "{2A1ED306-8DD8-4585-97AF-D07AF919D6B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarieCurie.WebMvc.Tests", "MarieCurie.WebMvc.Tests\MarieCurie.WebMvc.Tests.csproj", "{BBC44E66-4540-4B33-B001-7B37A2265393}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{74B2159D-4286-4A8E-AFE3-A4687A4EA33E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74B2159D-4286-4A8E-AFE3-A4687A4EA33E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74B2159D-4286-4A8E-AFE3-A4687A4EA33E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A1ED306-8DD8-4585-97AF-D07AF919D6B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A1ED306-8DD8-4585-97AF-D07AF919D6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A1ED306-8DD8-4585-97AF-D07AF919D6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A1ED306-8DD8-4585-97AF-D07AF919D6B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBC44E66-4540-4B33-B001-7B37A2265393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC44E66-4540-4B33-B001-7B37A2265393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC44E66-4540-4B33-B001-7B37A2265393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC44E66-4540-4B33-B001-7B37A2265393}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
