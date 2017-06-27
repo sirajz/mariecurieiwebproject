@@ -1,0 +1,6 @@
+C:\Users\zarooks\documents\visual studio 2015\Projects\MarieCurie.Web\MarieCurie.HelperServices.Utilities\bin\Release\MarieCurie.HelperServices.Utilities.dll
+C:\Users\zarooks\documents\visual studio 2015\Projects\MarieCurie.Web\MarieCurie.HelperServices.Utilities\bin\Release\MarieCurie.HelperServices.Utilities.pdb
+C:\Users\zarooks\documents\visual studio 2015\Projects\MarieCurie.Web\MarieCurie.HelperServices.Utilities\bin\Release\MarieCurie.Interview.Assets.dll
+C:\Users\zarooks\documents\visual studio 2015\Projects\MarieCurie.Web\MarieCurie.HelperServices.Utilities\obj\Release\MarieCurie.HelperServices.Utilities.csprojResolveAssemblyReference.cache
+C:\Users\zarooks\documents\visual studio 2015\Projects\MarieCurie.Web\MarieCurie.HelperServices.Utilities\obj\Release\MarieCurie.HelperServices.Utilities.dll
+C:\Users\zarooks\documents\visual studio 2015\Projects\MarieCurie.Web\MarieCurie.HelperServices.Utilities\obj\Release\MarieCurie.HelperServices.Utilities.pdb
